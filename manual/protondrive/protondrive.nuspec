@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>protondrive</id>
+    <version>1.10.4</version>
+    <title>ProtonDrive</title>
+    <authors>Proton AG</authors>
+    <owners>Sanshiro</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://proton.me/drive</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/TakataSanshiro/Chocolatey-Packages@master/automatic/protondrive/protondrive.png</iconUrl>
+    <description>Proton Drive is an end-to-end encrypted Swiss vault for your files that protects your data.</description>
+    <summary>Secure cloud storage and file sharing</summary>
+    <copyright>Proton AG</copyright>
+    <tags>admin security cloud multi-platform</tags>
+    <projectSourceUrl>https://github.com/ProtonDriveApps/windows-drive</projectSourceUrl>
+    <packageSourceUrl>https://github.com/TakataSanshiro/Chocolatey-Packages/tree/master/automatic/protondrive</packageSourceUrl>
+  </metadata>
+</package>
