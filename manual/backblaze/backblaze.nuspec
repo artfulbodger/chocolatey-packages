@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>backblaze</id>
+    <version>9.2.2.895</version>
+    <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/backblaze</packageSourceUrl>
+    <owners>Coloradohusky</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>Backblaze Backup Client (Install)</title>
+    <authors>Backblaze Inc.</authors>
+    <projectUrl>https://www.backblaze.com/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/083862aa2350219d550e7287c7aef71181eb7bba/backblaze/icon.png</iconUrl>
+    <copyright>© 2025 Backblaze, Inc.</copyright>
+    <licenseUrl>https://www.backblaze.com/company/policy/terms-of-service</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <docsUrl>https://www.backblaze.com/computer-backup/docs</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>backblaze backup</tags>
+    <summary>Create mirrors of your drives on the cloud with Backblaze.</summary>
+    <description>Backblaze is an online backup tool that allows users to back up their data to offsite data centers.
+	To install, run `choco install backblaze --ia '-signinaccount ""email"" ""password""'`.
+	To add a desktop shortcut, add `--params /DesktopShortcut`.
+	</description>
+    <releaseNotes>### Bug Fixes
+* The bz_tofix list is no longer generated when files haven been uploaded successfully.</releaseNotes>
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <dependencies>
+      <dependency id="chocolatey-misc-helpers.extension" version="0.0.4" />
+	  <dependency id="chocolatey" version="0.9.9.7" />
+	  <dependency id="autohotkey" version="1.*" />
+    </dependencies>
+    <!-- chocolatey-core.extension - https://community.chocolatey.org/packages/chocolatey-core.extension -->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
