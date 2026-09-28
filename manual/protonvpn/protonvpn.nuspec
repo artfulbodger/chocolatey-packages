@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>protonvpn</id>
+    <version>5.1.8</version>
+    <packageSourceUrl>https://github.com/artfulbodger/chocolatey-packages/tree/master/manual/protonvpn</packageSourceUrl>
+    <owners>artfulbodger</owners>
+    <title>protonvpn (Install)</title>
+    <authors>ProtonVPN AG</authors>
+    <projectUrl>https://protonvpn.com/</projectUrl>
+    <iconUrl>https://cdn.statically.io/gh/artfulbodger/chocolatey-packages@master/icons/protonvpn.png</iconUrl>
+    <copyright>2026 ProtonVPN AG</copyright>
+    <projectSourceUrl>https://protonvpn.com/</projectSourceUrl>
+    <tags>protonvpn</tags>
+    <summary>Secure Internet anywhere. Easy to use VPN for everyone.</summary>
+    <description>## Unique Features for a more secure VPN
+Unlike other VPN services, ProtonVPN is designed with security as the main focus, drawing upon the lessons we have learned from working with journalists and activists in the field.
+* Secure Core
+* Perfect Forward Secrecy
+* Swiss Based
+* No Logs
+* TOR VPN
+* P2P Support
+* Unlimited Bandwidth
+* 10Gbit Servers
+* Up to 10 Devices
+* Professional Support
+
+## Notes
+Starting in version 3.0.0 of this package, 32bit installation is no longer supported and will fail the installation.
+If 32bit support is needed, the last package version supporting this is [2.4.1](https://community.chocolatey.org/packages/protonvpn/2.4.1)
+
+This package update to GitHub releases only. 2.4.2, 2.4.3 are not on GitHub releases.</description>
+    <releaseNotes>* Fixed an issue where split tunneling in include mode did not work correctly with Proton Protocols.
+* Fixed an issue with Proton Protocols when using IPv6 with servers that don't support IPv6.
+* Improved the default settings of Proton Protocols by disabling LLMNR, NetBIOS, and dynamic DNS registration.
+* Minor security improvements.</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
